@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.container > div {
+    padding: 40px;
+}
+
+.container h1{
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+}
+
+.container p {
+    color: hsl(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    margin-top: 50px;
+    padding: 15px 30px;
+}
+
+.container a {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sedans button:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans a:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv button:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv a {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv a:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury a:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    margin-bottom: 15px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        width: 92.5%;
+        margin: 70px auto;
+    }
+
+    .sedans {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .luxury {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
